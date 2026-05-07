@@ -1,3 +1,5 @@
+# 4-Bit NanoProcessor - VHDL FPGA Implementation
+
 ## :pushpin: Key Features:
 
 - 12/13- bit instruction set with MOVI, ADD, NEG, and JZR operations
@@ -10,6 +12,29 @@
 
 - Real-time output display on Basys3 board LEDs and 7-segment displays
 <br>
+
+## Instruction Set Architecture
+
+### Original Instructions (4)
+| Instruction  | Description                          | Format                  |
+|--------------|--------------------------------------|-------------------------|
+| `MOVI R, d`  | Move immediate value to register     | `10 RRR 000 dddd`       |
+| `ADD Ra, Rb` | Add registers Ra and Rb              | `00 RaRaRa RbRbRb 0000` |
+| `NEG R`      | Two’s-complement negation            | `01 RRR 0000000`        |
+| `JZR R, d`   | Jump if register is zero             | `11 RRR 0000 ddd`       |
+
+### Extended Instructions (14 total)
+| Instruction   | Description                             | Format                  |
+|---------------|-----------------------------------------|-------------------------|
+| `SUB Ra, Rb`  | Subtract Rb from Ra                     | `00 RaRaRa RbRbRb 0001` |
+| `AND Ra, Rb`  | Bitwise AND operation                   | `00 RaRaRa RbRbRb 0010` |
+| `OR Ra, Rb`   | Bitwise OR operation                    | `00 RaRaRa RbRbRb 0011` |
+| `XOR Ra, Rb`  | Bitwise XOR operation                   | `00 RaRaRa RbRbRb 0100` |
+| `MUL Ra, Rb`  | Multiply registers                      | `00 RaRaRa RbRbRb 0101` |
+| `CMP Ra, Rb`  | Compare registers (sets flags)          | `00 RaRaRa RbRbRb 0111` |
+
+> **Note:** In the extended design, the instruction set expands to a total of 14 instructions. Six other opcodes (e.g., shift operations, immediate variants, etc.) are implemented in the full VHDL source; refer to `InstructionDecoder_Extended.vhd` for the complete encoding table.
+
 
 ## :hammer_and_wrench: INSTRUCTIONS TO OPERATE BASIC IMPLEMENTATION
 1. Allocated reset button

@@ -1,4 +1,4 @@
-# 4-Bit NanoProcessor - VHDL FPGA Implementation
+<img width="1271" height="768" alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" /># 4-Bit NanoProcessor - VHDL FPGA Implementation
 
 ## :pushpin: Key Features:
 
@@ -35,6 +35,11 @@
 
 > **Note:** In the extended design, the instruction set expands to a total of 14 instructions. Six other opcodes (e.g., shift operations, immediate variants, etc.) are implemented in the full VHDL source; refer to `InstructionDecoder_Extended.vhd` for the complete encoding table.
 
+---
+<p align="center">
+  <img src="![Uploading Gemini_Generated_Image_kc1n5xkc1n5xkc1n.png…]()
+" alt="NanoProcessor Hardware Setup" />
+</p>
 
 ## :hammer_and_wrench: INSTRUCTIONS TO OPERATE BASIC IMPLEMENTATION
 1. Allocated reset button

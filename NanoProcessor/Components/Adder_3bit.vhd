@@ -44,5 +44,6 @@ begin
             C_in => C2, 
             S => S(2), 
             C_out => C3 
-         );  
+         ); 
+    C_out <= C3; 
 end Behavioral;

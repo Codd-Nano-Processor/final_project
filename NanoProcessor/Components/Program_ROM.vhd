@@ -33,7 +33,7 @@ signal twelveSegmant_ROM : rom_type := (  -- Program is hardcoded here.
     "100110000011", --4 Movi R3, 3
     "001110110000", --5 Add  R7, R3
     "100010000000", --6 Movi R1, 0
-    "000000000000"  --7 
+    "110000000111"  --7 JZR R0, 7
     
 );
 

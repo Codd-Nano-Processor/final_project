@@ -12,6 +12,9 @@
 
 - Real-time output display on Basys3 board LEDs and 7-segment displays
 <br>
+<p align="center">
+  <img alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" width=500 height=300 />
+</p>
 
 ## Instruction Set Architecture
 
@@ -36,9 +39,7 @@
 > **Note:** In the extended design, the instruction set expands to a total of 14 instructions. Six other opcodes (e.g., shift operations, immediate variants, etc.) are implemented in the full VHDL source; refer to `InstructionDecoder_Extended.vhd` for the complete encoding table.
 
 ---
-<p align="center">
-  <img alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" width=500 height=300 />
-</p>
+
 
 ## :hammer_and_wrench: INSTRUCTIONS TO OPERATE BASIC IMPLEMENTATION
 1. Allocated reset button

@@ -14,34 +14,42 @@ architecture Behavioral of FA_sim is
 
 begin
 UUT:FA PORT MAP(
-    A=>a,
-    B=>b,
-    C_in=>cin,
-    S=>s,
-    C_out=>cout);
+    A => a,
+    B => b,
+    C_in => cin,
+    S => s,
+    C_out => cout);
+
  process
  begin
-    a<='0';
-    b<='0';
-    cin<='0';
+    a <= '0';
+    b <= '0';
+    cin <= '0';
     wait for 100ns;
-    cin<='1';
+
+    cin <= '1';
     wait for 100ns;
-    b<='1';
-    cin<='0';
+
+    b <= '1';
+    cin <= '0';
     wait for 100ns;
-    cin<='1';
+
+    cin <= '1';
     wait for 100ns;
-    a<='1';
-    b<='0';
-    cin<='0';
+
+    a <= '1';
+    b <= '0';
+    cin <= '0';
     wait for 100ns;
-    cin<='1';
+
+    cin <= '1';
     wait for 100ns;
-    b<='1';
-    cin<='0';
+
+    b <= '1';
+    cin <= '0';
     wait for 100ns;
-    cin<='1';
+
+    cin <= '1';
     wait for 100ns;
  end process;
 

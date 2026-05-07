@@ -84,3 +84,51 @@
 
 4. Expected behavior of the program 
 	- It is necessary to manually reset the nanoprocessor to perform the instructions hardcoded in the ROM.
+<br>
+##  Performance Metrics
+
+| **Metric**                 | **Original Design** | **Extended Design** |
+|----------------------------|---------------------|---------------------|
+| **Instructions Supported** | 4                   | 14                  |
+| **FPGA Slices Used**       | 28                  | 42                  |
+| **Maximum Frequency**      | 85 MHz              | 75 MHz              |
+| **Power Consumption**      | 0.8 W               | 1.2 W               |
+
+---
+
+##  Hardware Photos
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e8e209f8-255c-4587-abb2-941ee84ba8e5" alt="fpga-board" width="400" />
+</p>
+
+---
+
+##  Project Structure
+
+```text
+VHDL-4bit-NanoProcessor-FPGA/
+├── Nanoprocessor/
+│   ├── ALU.vhd
+│   ├── ControlUnit.vhd
+│   ├── InstructionDecoder.vhd
+│   ├── Multiplexer.vhd
+│   ├── ProgramCounter.vhd
+│   ├── RegisterBank.vhd
+│   └── TopLevel.vhd
+├── Nanoprocessor-Extended/
+│   ├── ALU_Extended.vhd
+│   ├── ControlUnit_Extended.vhd
+│   ├── InstructionDecoder_Extended.vhd
+│   ├── Multiplexer_Extended.vhd
+│   ├── ProgramCounter_Extended.vhd
+│   ├── RegisterBank_Extended.vhd
+│   └── TopLevel_Extended.vhd
+├── Presentation/
+│   ├── NanoProcessor_Presentation.pdf
+│   └── NanoProcessor_Presentation.pptx
+├── NanoProcessor_Project_Report.pdf
+├── README.md
+└── .gitignore
+```
+---

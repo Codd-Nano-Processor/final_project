@@ -1,4 +1,4 @@
-<img width="1271" height="768" alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" /># 4-Bit NanoProcessor - VHDL FPGA Implementation
+# 4-Bit NanoProcessor - VHDL FPGA Implementation
 
 ## :pushpin: Key Features:
 
@@ -37,8 +37,7 @@
 
 ---
 <p align="center">
-  <img src="![Uploading Gemini_Generated_Image_kc1n5xkc1n5xkc1n.png…]()
-" alt="NanoProcessor Hardware Setup" />
+  <img alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" />
 </p>
 
 ## :hammer_and_wrench: INSTRUCTIONS TO OPERATE BASIC IMPLEMENTATION

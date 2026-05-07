@@ -110,46 +110,46 @@
 VHDL-4bit-NanoProcessor-FPGA/
 ├── Nanoprocessor/
 │   ├── BitStream
-    ├── Components
-		├── ADD_SUB_4bit.vhd
-		├── Adder_3bit.vhd
-		├── D_FF.vhd
-		├── Decoder_3_to_8.vhd
-		├── FA.vhd
-		├── HA.vhd
-		├── Instruction_Decoder.vhd
-		├── LUT_16_7.vhd
-		├── MUX_2_way_3_bit.vhd
-		├── MUX_2_way_4_bit.vhd
-		├── MUX_8_way_4_bit.vhd
-		├── NanoProcessor.vhd
-		├── PC_3_bit.vhd
-		├── Program_ROM.vhd
-		├── RCA_4.vhd
-		├── Register_4bit.vhd
-		├── Register_Bank.vhd
-		├── Slow_Clock.vhd
+│	├── Components
+│	├──	├── ADD_SUB_4bit.vhd
+│	│	├── Adder_3bit.vhd
+│	│	├── D_FF.vhd
+│	│	├── Decoder_3_to_8.vhd
+│	│	├── FA.vhd
+│	│	├── HA.vhd
+│	│	├── Instruction_Decoder.vhd
+│	│	├── LUT_16_7.vhd
+│	│	├── MUX_2_way_3_bit.vhd
+│	│	├── MUX_2_way_4_bit.vhd
+│	│	├── MUX_8_way_4_bit.vhd
+│	│	├── NanoProcessor.vhd
+│	│	├── PC_3_bit.vhd
+│	│	├── Program_ROM.vhd
+│	│	├── RCA_4.vhd
+│	│	├── Register_4bit.vhd
+│	│	├── Register_Bank.vhd
+│	│	├── Slow_Clock.vhd
 │   ├── Constraints
 │   ├── Designs
 │   ├── Simulation
-		├── TB_ADD_SUB_4bit.vhd
-		├── TB_Adder_3bit.vhd
-		├── TB_D_FF.vhd
-		├── TB_Decoder_3_to_8.vhd
-		├── FA_Sim.vhd
-		├── HA_Sim.vhd
-		├── TB_Instruction_Decoder.vhd
-		├── TB_LUT_16_7.vhd
-		├── TB_MUX_2_way_3_bit.vhd
-		├── TB_MUX_2_way_4_bit.vhd
-		├── TB_MUX_8_way_4_bit.vhd
-		├── TB_NanoProcessor.vhd
-		├── TB_PC_3_bit.vhd
-		├── TB_Program_ROM.vhd
-		├── RCA_4_Sim.vhd
-		├── TB_Register_4bit.vhd
-		├── TB_Register_Bank.vhd
-		├── TB_Slow_Clock.vhd
+│	│	├── FA_Sim.vhd
+│	│	├── HA_Sim.vhd
+│	│	├── RCA4_Sim.vhd
+│	│	├── TB_ADD_SUB_4bit.vhd
+│	│	├── TB_Adder_3bit.vhd
+│	│	├── TB_D_FF.vhd
+│	│	├── TB_Decoder_3_to_8.vhd
+│	│	├── TB_Instruction_Decoder.vhd
+│	│	├── TB_LUT_16_7.vhd
+│	│	├── TB_MUX_2_way_3_bit.vhd
+│	│	├── TB_MUX_2_way_4_bit.vhd
+│	│	├── TB_MUX_8_way_4_bit.vhd
+│	│	├── TB_NanoProcessor.vhd
+│	│	├── TB_PC_3_bit.vhd
+│	│	├── TB_Program_ROM.vhd
+│	│	├── TB_Register_4bit.vhd
+│	│	├── TB_Register_Bank.vhd
+│	│	├── TB_Slow_Clock.vhd
 │   ├── Timing-Diagrams
 ├── Nanoprocessor-Extended/
 │   ├── ALU_Extended.vhd

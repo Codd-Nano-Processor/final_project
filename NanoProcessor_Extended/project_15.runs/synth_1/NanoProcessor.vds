@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri May  8 19:49:04 2026
+# Process ID         : 12256
+# Current directory  : C:/Users/User/project_15/project_15.runs/synth_1
+# Command line       : vivado.exe -log NanoProcessor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NanoProcessor.tcl
+# Log file           : C:/Users/User/project_15/project_15.runs/synth_1/NanoProcessor.vds
+# Journal file       : C:/Users/User/project_15/project_15.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-BMC62JM
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+# CPU Frequency      : 2904 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 8522 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 22480 MB
+# Available Virtual  : 9390 MB
+#-----------------------------------------------------------
+source NanoProcessor.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 527.145 ; gain = 218.332
+Command: synth_design -top NanoProcessor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13432
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1262.863 ; gain = 540.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:38]
+INFO: [Synth 8-3491] module 'Slow_Clock' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Slow_Clock.vhd:5' bound to instance 'SlowClock' of component 'Slow_Clock' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clock' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Slow_Clock.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clock' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Slow_Clock.vhd:12]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/LUT_16_7.vhd:5' bound to instance 'LUT' of component 'LUT_16_7' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/LUT_16_7.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/LUT_16_7.vhd:10]
+INFO: [Synth 8-3491] module 'PC_3_bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:5' bound to instance 'ProgramCounter' of component 'PC_3_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'PC_3_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:12]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/D_FF.vhd:4' bound to instance 'DFF_0' of component 'D_FF' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/D_FF.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/D_FF.vhd:11]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/D_FF.vhd:4' bound to instance 'DFF_1' of component 'D_FF' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:27]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/D_FF.vhd:4' bound to instance 'DFF_2' of component 'D_FF' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PC_3_bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/PC_3_bit.vhd:12]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Program_ROM.vhd:5' bound to instance 'ProgramRom' of component 'Program_ROM' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Program_ROM.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Program_ROM.vhd:10]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Instruction_Decoder.vhd:4' bound to instance 'InstructionDecoder' of component 'Instruction_Decoder' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Instruction_Decoder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Instruction_Decoder.vhd:20]
+INFO: [Synth 8-3491] module 'MUX_2_way_4_bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_4_bit.vhd:4' bound to instance 'MUX_2_to_1_4bit_1' of component 'MUX_2_way_4_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_way_4_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_4_bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_way_4_bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_4_bit.vhd:11]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:4' bound to instance 'RegisterBank' of component 'Register_Bank' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:19]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Decoder_3_to_8.vhd:4' bound to instance 'Decoder_3_to_8_new' of component 'Decoder_3_to_8' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Decoder_3_to_8.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Decoder_3_to_8.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Decoder_3_to_8.vhd:12]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_0' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Register_4bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:14]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_1' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:56]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_2' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:65]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_3' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:74]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_4' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:83]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_5' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:92]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_6' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:101]
+INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_4bit.vhd:4' bound to instance 'Register_4bit_7' of component 'Register_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Register_Bank.vhd:19]
+INFO: [Synth 8-3491] module 'MUX_8_way_4_bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_8_way_4_bit.vhd:4' bound to instance 'MUX_8_to_1_4bit_0' of component 'MUX_8_way_4_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'MUX_8_way_4_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_8_way_4_bit.vhd:17]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_8_way_4_bit.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8_way_4_bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_8_way_4_bit.vhd:17]
+INFO: [Synth 8-3491] module 'MUX_8_way_4_bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_8_way_4_bit.vhd:4' bound to instance 'MUX_8_to_1_4bit_1' of component 'MUX_8_way_4_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:234]
+INFO: [Synth 8-3491] module 'ADD_SUB_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/ADD_SUB_4bit.vhd:4' bound to instance 'AddSub' of component 'ADD_SUB_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'ADD_SUB_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/ADD_SUB_4bit.vhd:15]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:4' bound to instance 'RCA0' of component 'RCA_4' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/ADD_SUB_4bit.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:14]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA0' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/HA.vhd:4' bound to instance 'HA0' of component 'HA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/HA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/HA.vhd:11]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/HA.vhd:4' bound to instance 'HA1' of component 'HA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'FA' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA1' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:37]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA2' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:44]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA3' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/RCA_4.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ADD_SUB_4bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/ADD_SUB_4bit.vhd:15]
+INFO: [Synth 8-3491] module 'Comparator_4bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:4' bound to instance 'Comparator' of component 'Comparator_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'Comparator_4bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:10]
+INFO: [Synth 8-3491] module 'Comparator_1bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:4' bound to instance 'comp3' of component 'Comparator_1bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Comparator_1bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Comparator_1bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:13]
+INFO: [Synth 8-3491] module 'Comparator_1bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:4' bound to instance 'comp2' of component 'Comparator_1bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:36]
+INFO: [Synth 8-3491] module 'Comparator_1bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:4' bound to instance 'comp1' of component 'Comparator_1bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:37]
+INFO: [Synth 8-3491] module 'Comparator_1bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_1bit.vhd:4' bound to instance 'comp0' of component 'Comparator_1bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Comparator_4bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Comparator_4bit.vhd:10]
+INFO: [Synth 8-3491] module 'Multiplier_2bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Multiplier_2bit.vhd:4' bound to instance 'Multiplier' of component 'Multiplier_2bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'Multiplier_2bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Multiplier_2bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier_2bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Multiplier_2bit.vhd:11]
+INFO: [Synth 8-3491] module 'MUX_2_way_3_bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_3_bit.vhd:4' bound to instance 'Mux_2_to_1_3bit_0' of component 'MUX_2_way_3_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_way_3_bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_3_bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_way_3_bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/MUX_2_way_3_bit.vhd:11]
+INFO: [Synth 8-3491] module 'Adder_3bit' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:4' bound to instance 'Adder3bit' of component 'Adder_3bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'Adder_3bit' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:10]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:25]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:34]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Adder_3bit' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:10]
+WARNING: [Synth 8-614] signal 'Ins_Bus' is read in the process but is not in the sensitivity list [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (0#1) [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:38]
+WARNING: [Synth 8-3848] Net C_out in module/entity Adder_3bit does not have driver. [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/Adder_3bit.vhd:7]
+WARNING: [Synth 8-7129] Port C_out in module Adder_3bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A4[3] in module Multiplier_2bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A4[2] in module Multiplier_2bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B4[3] in module Multiplier_2bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B4[2] in module Multiplier_2bit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.949 ; gain = 660.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.949 ; gain = 660.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.949 ; gain = 660.672
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1382.949 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/constrain/Basys3.xdc]
+Finished Parsing XDC File [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/constrain/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/constrain/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NanoProcessor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NanoProcessor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1429.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1429.445 ; gain = 707.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1429.445 ; gain = 707.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1429.445 ; gain = 707.168
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'anode_reg' [C:/Users/User/Downloads/final_project-main/final_project-main/NanoProcessor_Extended/NanoProcessor_Srcs/sources_1/NanoProcessor.vhd:292]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1429.445 ; gain = 707.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   9 Input   13 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	  17 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1438.004 ; gain = 715.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1593.051 ; gain = 870.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1593.273 ; gain = 870.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1608.859 ; gain = 886.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT3   |     8|
+|6     |LUT4   |     7|
+|7     |LUT5   |     3|
+|8     |LUT6   |    11|
+|9     |FDCE   |     9|
+|10    |FDRE   |    26|
+|11    |LD     |     4|
+|12    |IBUF   |     2|
+|13    |OBUF   |    26|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1852.215 ; gain = 1083.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1852.215 ; gain = 1129.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1858.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1861.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete | Checksum: 40bded2f
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:00 . Memory (MB): peak = 1861.305 ; gain = 1334.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 1861.305 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/project_15/project_15.runs/synth_1/NanoProcessor.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file NanoProcessor_utilization_synth.rpt -pb NanoProcessor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 19:50:22 2026...

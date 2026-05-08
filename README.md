@@ -16,6 +16,32 @@
   <img alt="Gemini_Generated_Image_kc1n5xkc1n5xkc1n" src="https://github.com/user-attachments/assets/00af106d-ae11-462e-abe4-0f1f85ce2f25" width=500 height=300 />
 </p>
 
+## Nano Processor Architecture
+
+The processor follows a simplified CPU architecture consisting of:
+
+- Program Counter (PC)
+- Program ROM
+- Instruction Decoder
+- Register Bank
+- Arithmetic Logic Unit (ALU)
+- Multiplexers
+- Data Bus
+- Control Unit
+- Seven Segment Display Interface
+- Stack Unit (Extended Version)
+
+The processor is designed as a small educational CPU architecture to demonstrate:
+
+- Instruction execution
+- Register-based operations
+- Arithmetic datapath design
+- Control signal generation
+- Conditional branching
+- Stack-based memory operations
+- FPGA implementation workflow
+
+---
 ## Instruction Set Architecture
 
 ### Original Instructions (4)
@@ -39,7 +65,27 @@
 > **Note:** In the extended design, the instruction set expands to a total of 14 instructions. Six other opcodes (e.g., shift operations, immediate variants, etc.) are implemented in the full VHDL source; refer to `InstructionDecoder_Extended.vhd` for the complete encoding table.
 
 ---
+## Datapath Overview
 
+The execution flow in the basic processor is:
+
+```text
+Program Counter
+       ↓
+Program ROM
+       ↓
+Instruction Decoder
+       ↓
+Register Selection + Control Signals
+       ↓
+MUX Network
+       ↓
+ALU
+       ↓
+Register Bank Write Back
+```
+
+---
 
 ## :hammer_and_wrench: INSTRUCTIONS TO OPERATE BASIC IMPLEMENTATION
 1. Allocated reset button
@@ -135,25 +181,7 @@
     │   ├───Constraints
     │   │       Basys3.xdc
     │   │
-    │   ├───Designs
-    │   │       Adder_3bit.png
-    │   │       ADD_SUB_4bit.png
-    │   │       Decoder_3_to_8.png
-    │   │       D_FF.png
-    │   │       FA.png
-    │   │       HA.png
-    │   │       Instruction_Decoder.png
-    │   │       LUT_16_7.png
-    │   │       MUX_2_way_3_bit.png
-    │   │       MUX_2_way_4_bit.png
-    │   │       MUX_8_way_4_bit.png
-    │   │       NanoProcessor.png
-    │   │       PC_3_bit.png
-    │   │       Program_Rom.png
-    │   │       RCA4.png
-    │   │       Register_4bit.png
-    │   │       Register_Bank.png
-    │   │       SlowClock.png
+    │   ├───Designs/..
     │   │
     │   ├───Simulation
     │   │       FA_Sim.vhd
@@ -252,4 +280,47 @@
             └───synth_1/..
                     
 ```
+---
+
+## Hardware Verification
+
+The following were verified on hardware:
+
+- Register output behavior
+- Arithmetic correctness
+- Conditional jump execution
+- Seven segment output
+- Stack push/pop operations
+- Clock synchronization
+- Reset behavior
+
+
+---
+# Future Improvements
+
+Potential future extensions include:
+
+- Larger instruction memory
+- Data memory support
+- Load/store instructions
+- Expanded ALU operations
+- UART debugging interface
+- Cache memory support
+
+---
+
+
+## Conclusion
+This project demonstrates the successful design and implementation of an educational nano processor architecture using VHDL. By transitioning from a foundational design to an extended version featuring a stack-based execution model and an expanded ALU for logical operations, the project highlights the evolution of processor complexity and architectural efficiency.
+
+### Key technical competencies gained through this development include:
+
+- Processor Architecture: Mastering the relationship between data paths and control units.
+
+- Digital Logic Design: Implementing low-level hardware modules targeted for FPGA environments.
+
+- Hardware Verification: Utilizing industry-standard tools like Vivado 2018 for rigorous simulation and debugging.
+
+- Physical Implementation: Deploying and testing the final logic on the Basys 3 hardware platform to confirm real-world functionality.
+
 ---

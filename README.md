@@ -107,63 +107,258 @@
 ##  Project Structure
 
 ```text
-VHDL-4bit-NanoProcessor-FPGA/
-├── Nanoprocessor/
-│   ├── BitStream
-│	├── Components
-│	├──	├── ADD_SUB_4bit.vhd
-│	│	├── Adder_3bit.vhd
-│	│	├── D_FF.vhd
-│	│	├── Decoder_3_to_8.vhd
-│	│	├── FA.vhd
-│	│	├── HA.vhd
-│	│	├── Instruction_Decoder.vhd
-│	│	├── LUT_16_7.vhd
-│	│	├── MUX_2_way_3_bit.vhd
-│	│	├── MUX_2_way_4_bit.vhd
-│	│	├── MUX_8_way_4_bit.vhd
-│	│	├── NanoProcessor.vhd
-│	│	├── PC_3_bit.vhd
-│	│	├── Program_ROM.vhd
-│	│	├── RCA_4.vhd
-│	│	├── Register_4bit.vhd
-│	│	├── Register_Bank.vhd
-│	│	├── Slow_Clock.vhd
-│   ├── Constraints
-│   ├── Designs
-│   ├── Simulation
-│	│	├── FA_Sim.vhd
-│	│	├── HA_Sim.vhd
-│	│	├── RCA4_Sim.vhd
-│	│	├── TB_ADD_SUB_4bit.vhd
-│	│	├── TB_Adder_3bit.vhd
-│	│	├── TB_D_FF.vhd
-│	│	├── TB_Decoder_3_to_8.vhd
-│	│	├── TB_Instruction_Decoder.vhd
-│	│	├── TB_LUT_16_7.vhd
-│	│	├── TB_MUX_2_way_3_bit.vhd
-│	│	├── TB_MUX_2_way_4_bit.vhd
-│	│	├── TB_MUX_8_way_4_bit.vhd
-│	│	├── TB_NanoProcessor.vhd
-│	│	├── TB_PC_3_bit.vhd
-│	│	├── TB_Program_ROM.vhd
-│	│	├── TB_Register_4bit.vhd
-│	│	├── TB_Register_Bank.vhd
-│	│	├── TB_Slow_Clock.vhd
-│   ├── Timing-Diagrams
-├── Nanoprocessor-Extended/
-│   ├── ALU_Extended.vhd
-│   ├── ControlUnit_Extended.vhd
-│   ├── InstructionDecoder_Extended.vhd
-│   ├── Multiplexer_Extended.vhd
-│   ├── ProgramCounter_Extended.vhd
-│   ├── RegisterBank_Extended.vhd
-│   └── TopLevel_Extended.vhd
-├── Presentation/
-│   ├── NanoProcessor_Presentation.pdf
-│   └── NanoProcessor_Presentation.pptx
-├── NanoProcessor_Project_Report.pdf
-├── README.md
-└── .gitignore
+
+    ├───NanoProcessor
+    │   ├───BitStream
+    │   │       NanoProcessor.bit
+    │   │
+    │   ├───Components
+    │   │       Adder_3bit.vhd
+    │   │       ADD_SUB_4bit.vhd
+    │   │       Decoder_3_to_8.vhd
+    │   │       D_FF.vhd
+    │   │       FA.vhd
+    │   │       HA.vhd
+    │   │       Instruction_Decoder.vhd
+    │   │       LUT_16_7.vhd
+    │   │       MUX_2_way_3_bit.vhd
+    │   │       MUX_2_way_4_bit.vhd
+    │   │       MUX_8_way_4_bit.vhd
+    │   │       NanoProcessor.vhd
+    │   │       PC_3_bit.vhd
+    │   │       Program_ROM.vhd
+    │   │       RCA_4.vhd
+    │   │       Register_4bit.vhd
+    │   │       Register_Bank.vhd
+    │   │       Slow_Clock.vhd
+    │   │
+    │   ├───Constraints
+    │   │       Basys3.xdc
+    │   │
+    │   ├───Designs
+    │   │       Adder_3bit.png
+    │   │       ADD_SUB_4bit.png
+    │   │       Decoder_3_to_8.png
+    │   │       D_FF.png
+    │   │       FA.png
+    │   │       HA.png
+    │   │       Instruction_Decoder.png
+    │   │       LUT_16_7.png
+    │   │       MUX_2_way_3_bit.png
+    │   │       MUX_2_way_4_bit.png
+    │   │       MUX_8_way_4_bit.png
+    │   │       NanoProcessor.png
+    │   │       PC_3_bit.png
+    │   │       Program_Rom.png
+    │   │       RCA4.png
+    │   │       Register_4bit.png
+    │   │       Register_Bank.png
+    │   │       SlowClock.png
+    │   │
+    │   ├───Simulation
+    │   │       FA_Sim.vhd
+    │   │       HA_Sim.vhd
+    │   │       RCA4_Sim.vhd
+    │   │       TB_Adder_3bit.vhd
+    │   │       TB_ADD_SUB_4bit.vhd
+    │   │       TB_Decoder_3_to_8.vhd
+    │   │       TB_D_FF.vhd
+    │   │       TB_Instruction_Decoder.vhd
+    │   │       TB_LUT_16_7.vhd
+    │   │       TB_MUX_2_way_3_bit.vhd
+    │   │       TB_MUX_2_way_4_bit.vhd
+    │   │       TB_MUX_8_way_4_bit.vhd
+    │   │       TB_NanoProcessor.vhd
+    │   │       TB_PC_3_bit.vhd
+    │   │       TB_Program_ROM.vhd
+    │   │       TB_Register_4bit.vhd
+    │   │       TB_Register_Bank.vhd
+    │   │       TB_Slow_Clock.vhd
+    │   │
+    │   └───Timing-Diagrams
+    │           Adder_3bit.png
+    │           ADD_SUB_4bit.png
+    │           Decoder_3_to_8bit.png
+    │           D_FF.png
+    │           FA.png
+    │           HA.png
+    │           Instruction_Decoder.png
+    │           LUT_16_7.png
+    │           MUX_2_way_3_bit.png
+    │           MUX_2_way_4_bit.png
+    │           MUX_8_way_4_bit.png
+    │           NanoProcessor.png
+    │           PC_3_bit.png
+    │           Program_ROM.png
+    │           RCA4.png
+    │           Register_4bit.png
+    │           Register_Bank.png
+    │           SlowClock.png
+    │
+    └───NanoProcessor_Extended
+        │   NanoProcessor.bit
+        │   project_15.xpr
+        │
+        ├───Designs
+        │       Adder_3bit.png
+        │       ADD_SUB_4bit.png
+        │       Decoder_3_to_8.png
+        │       D_FF.png
+        │       Instruction_Decoder.png
+        │       LUT_16_7.png
+        │       MUX_2_way_3_bit.png
+        │       MUX_2_way_4_bit.png
+        │       NanoProcessor.png
+        │       PC_3_bit.png
+        │       Program_Rom.png
+        │       RCA4.png
+        │       Register_4bit.png
+        │       Register_Bank.png
+        │       SlowClock.png
+        │
+        ├───NanoProcessor_Srcs
+        │   ├───constrain
+        │   │       Basys3.xdc
+        │   │       hi
+        │   │
+        │   ├───sim_1
+        │   │       RCA4_Sim.vhd
+        │   │       TB_Adder_3bit.vhd
+        │   │       TB_ADD_SUB_4bit.vhd
+        │   │       TB_Comparator_4bit
+        │   │       TB_Decoder_3_to_8.vhd
+        │   │       TB_D_FF.vhd
+        │   │       TB_FA.vhd
+        │   │       TB_HA.vhd
+        │   │       TB_LUT_16_7.vhd
+        │   │       TB_Multiplier_2bit.vhd
+        │   │       TB_MUX_2_way_3_bit.vhd
+        │   │       TB_MUX_2_way_4_bit.vhd
+        │   │       TB_MUX_8_way_4_bit.vhd
+        │   │       TB_Nanoprocessor.vhd
+        │   │       TB_PC_3_bit.vhd
+        │   │       TB_Program_ROM.vhd
+        │   │       TB_Register_4bit.vhd
+        │   │       TB_Register_Bank.vhd
+        │   │       TB_Slow_Clock.vhd
+        │   │
+        │   └───sources_1
+        │           Adder_3bit.vhd
+        │           ADD_SUB_4bit.vhd
+        │           Comparator_1bit.vhd
+        │           Comparator_4bit.vhd
+        │           Decoder_3_to_8.vhd
+        │           D_FF.vhd
+        │           FA.vhd
+        │           HA.vhd
+        │           Instruction_Decoder.vhd
+        │           LUT_16_7.vhd
+        │           Multiplier_2bit.vhd
+        │           MUX_2_way_3_bit.vhd
+        │           MUX_2_way_4_bit.vhd
+        │           MUX_8_way_4_bit.vhd
+        │           NanoProcessor.vhd
+        │           PC_3_bit.vhd
+        │           Program_ROM.vhd
+        │           RCA_4.vhd
+        │           Register_4bit.vhd
+        │           Register_Bank.vhd
+        │           Slow_Clock.vhd
+        │
+        ├───project_15.cache
+        │   ├───sim
+        │   │       ssm.db
+        │   │
+        │   └───wt
+        │           project.wpc
+        │           synthesis.wdf
+        │           synthesis_details.wdf
+        │           webtalk_pa.xml
+        │           xsim.wdf
+        │
+        ├───project_15.hw
+        │   │   project_15.lpr
+        │   │
+        │   └───hw_1
+        │           hw.xml
+        │
+        ├───project_15.ip_user_files
+        │       README.txt
+        │
+        └───project_15.runs
+            ├───impl_1
+            │       clockInfo.txt
+            │       dfx_runtime.txt
+            │       gen_run.xml
+            │       htr.txt
+            │       init_design.pb
+            │       ISEWrap.js
+            │       ISEWrap.sh
+            │       NanoProcessor.bit
+            │       NanoProcessor.tcl
+            │       NanoProcessor.vdi
+            │       NanoProcessor_12756.backup.vdi
+            │       NanoProcessor_bus_skew_routed.pb
+            │       NanoProcessor_bus_skew_routed.rpt
+            │       NanoProcessor_bus_skew_routed.rpx
+            │       NanoProcessor_clock_utilization_routed.rpt
+            │       NanoProcessor_control_sets_placed.rpt
+            │       NanoProcessor_drc_opted.pb
+            │       NanoProcessor_drc_opted.rpt
+            │       NanoProcessor_drc_opted.rpx
+            │       NanoProcessor_drc_routed.pb
+            │       NanoProcessor_drc_routed.rpt
+            │       NanoProcessor_drc_routed.rpx
+            │       NanoProcessor_io_placed.rpt
+            │       NanoProcessor_methodology_drc_routed.pb
+            │       NanoProcessor_methodology_drc_routed.rpt
+            │       NanoProcessor_methodology_drc_routed.rpx
+            │       NanoProcessor_opt.dcp
+            │       NanoProcessor_physopt.dcp
+            │       NanoProcessor_placed.dcp
+            │       NanoProcessor_power_routed.rpt
+            │       NanoProcessor_power_routed.rpx
+            │       NanoProcessor_power_summary_routed.pb
+            │       NanoProcessor_routed.dcp
+            │       NanoProcessor_route_status.pb
+            │       NanoProcessor_route_status.rpt
+            │       NanoProcessor_timing_summary_routed.pb
+            │       NanoProcessor_timing_summary_routed.rpt
+            │       NanoProcessor_timing_summary_routed.rpx
+            │       NanoProcessor_utilization_placed.pb
+            │       NanoProcessor_utilization_placed.rpt
+            │       opt_design.pb
+            │       phys_opt_design.pb
+            │       place_design.pb
+            │       project.wdf
+            │       route_design.pb
+            │       rundef.js
+            │       runme.bat
+            │       runme.log
+            │       runme.sh
+            │       vivado.jou
+            │       vivado.pb
+            │       vivado_12756.backup.jou
+            │       write_bitstream.pb
+            │
+            └───synth_1
+                    dfx_runtime.txt
+                    gen_run.xml
+                    htr.txt
+                    ISEWrap.js
+                    ISEWrap.sh
+                    NanoProcessor.dcp
+                    NanoProcessor.tcl
+                    NanoProcessor.vds
+                    NanoProcessor_utilization_synth.pb
+                    NanoProcessor_utilization_synth.rpt
+                    project.wdf
+                    rundef.js
+                    runme.bat
+                    runme.log
+                    runme.sh
+                    vivado.jou
+                    vivado.pb
+                    __synthesis_is_complete__
 ```
 ---

@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity TB_Comparator_4bit is
+end TB_Comparator_4bit;
+
+architecture Behavioral of TB_Comparator_4bit is
+    component Comparator_4bit
+        Port ( A, B : in STD_LOGIC_VECTOR(3 downto 0); Ena : in STD_LOGIC;
+               Equal, Greater, Less : out STD_LOGIC );
+    end component;
+    signal A, B : std_logic_vector(3 downto 0);
+    signal Eq, Gt, Lt : std_logic;
+begin
+    UUT: Comparator_4bit port map (A, B, '1', Eq, Gt, Lt);
+    process
+    begin
+        A <= "1001"; B <= "1100"; wait for 100 ns; -- 540U bits
+        A <= "1110"; B <= "1110"; wait for 100 ns; -- 558G bits (Equal)
+        A <= "1101"; B <= "1011"; wait for 100 ns; -- 589C vs 574C
+        wait;
+    end process;
+end Behavioral;

@@ -20,8 +20,9 @@ begin
 
 UUT : Program_ROM
     port map(
-        address => address,
-        instruction_code => instruction_code
+        address => address,                    -- connect testbench address to ROM
+        instruction_code => instruction_code   -- connect ROM output to testbench signal
+
     );
 
 process

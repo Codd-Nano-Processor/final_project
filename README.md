@@ -175,46 +175,13 @@
     │   │       TB_Register_Bank.vhd
     │   │       TB_Slow_Clock.vhd
     │   │
-    │   └───Timing-Diagrams
-    │           Adder_3bit.png
-    │           ADD_SUB_4bit.png
-    │           Decoder_3_to_8bit.png
-    │           D_FF.png
-    │           FA.png
-    │           HA.png
-    │           Instruction_Decoder.png
-    │           LUT_16_7.png
-    │           MUX_2_way_3_bit.png
-    │           MUX_2_way_4_bit.png
-    │           MUX_8_way_4_bit.png
-    │           NanoProcessor.png
-    │           PC_3_bit.png
-    │           Program_ROM.png
-    │           RCA4.png
-    │           Register_4bit.png
-    │           Register_Bank.png
-    │           SlowClock.png
+    │   └───Timing-Diagrams/..
     │
     └───NanoProcessor_Extended
         │   NanoProcessor.bit
         │   project_15.xpr
         │
-        ├───Designs
-        │       Adder_3bit.png
-        │       ADD_SUB_4bit.png
-        │       Decoder_3_to_8.png
-        │       D_FF.png
-        │       Instruction_Decoder.png
-        │       LUT_16_7.png
-        │       MUX_2_way_3_bit.png
-        │       MUX_2_way_4_bit.png
-        │       NanoProcessor.png
-        │       PC_3_bit.png
-        │       Program_Rom.png
-        │       RCA4.png
-        │       Register_4bit.png
-        │       Register_Bank.png
-        │       SlowClock.png
+        ├───Designs/..
         │
         ├───NanoProcessor_Srcs
         │   ├───constrain
@@ -269,12 +236,7 @@
         │   ├───sim
         │   │       ssm.db
         │   │
-        │   └───wt
-        │           project.wpc
-        │           synthesis.wdf
-        │           synthesis_details.wdf
-        │           webtalk_pa.xml
-        │           xsim.wdf
+        │   └───wt/..
         │
         ├───project_15.hw
         │   │   project_15.lpr
@@ -286,79 +248,8 @@
         │       README.txt
         │
         └───project_15.runs
-            ├───impl_1
-            │       clockInfo.txt
-            │       dfx_runtime.txt
-            │       gen_run.xml
-            │       htr.txt
-            │       init_design.pb
-            │       ISEWrap.js
-            │       ISEWrap.sh
-            │       NanoProcessor.bit
-            │       NanoProcessor.tcl
-            │       NanoProcessor.vdi
-            │       NanoProcessor_12756.backup.vdi
-            │       NanoProcessor_bus_skew_routed.pb
-            │       NanoProcessor_bus_skew_routed.rpt
-            │       NanoProcessor_bus_skew_routed.rpx
-            │       NanoProcessor_clock_utilization_routed.rpt
-            │       NanoProcessor_control_sets_placed.rpt
-            │       NanoProcessor_drc_opted.pb
-            │       NanoProcessor_drc_opted.rpt
-            │       NanoProcessor_drc_opted.rpx
-            │       NanoProcessor_drc_routed.pb
-            │       NanoProcessor_drc_routed.rpt
-            │       NanoProcessor_drc_routed.rpx
-            │       NanoProcessor_io_placed.rpt
-            │       NanoProcessor_methodology_drc_routed.pb
-            │       NanoProcessor_methodology_drc_routed.rpt
-            │       NanoProcessor_methodology_drc_routed.rpx
-            │       NanoProcessor_opt.dcp
-            │       NanoProcessor_physopt.dcp
-            │       NanoProcessor_placed.dcp
-            │       NanoProcessor_power_routed.rpt
-            │       NanoProcessor_power_routed.rpx
-            │       NanoProcessor_power_summary_routed.pb
-            │       NanoProcessor_routed.dcp
-            │       NanoProcessor_route_status.pb
-            │       NanoProcessor_route_status.rpt
-            │       NanoProcessor_timing_summary_routed.pb
-            │       NanoProcessor_timing_summary_routed.rpt
-            │       NanoProcessor_timing_summary_routed.rpx
-            │       NanoProcessor_utilization_placed.pb
-            │       NanoProcessor_utilization_placed.rpt
-            │       opt_design.pb
-            │       phys_opt_design.pb
-            │       place_design.pb
-            │       project.wdf
-            │       route_design.pb
-            │       rundef.js
-            │       runme.bat
-            │       runme.log
-            │       runme.sh
-            │       vivado.jou
-            │       vivado.pb
-            │       vivado_12756.backup.jou
-            │       write_bitstream.pb
-            │
-            └───synth_1
-                    dfx_runtime.txt
-                    gen_run.xml
-                    htr.txt
-                    ISEWrap.js
-                    ISEWrap.sh
-                    NanoProcessor.dcp
-                    NanoProcessor.tcl
-                    NanoProcessor.vds
-                    NanoProcessor_utilization_synth.pb
-                    NanoProcessor_utilization_synth.rpt
-                    project.wdf
-                    rundef.js
-                    runme.bat
-                    runme.log
-                    runme.sh
-                    vivado.jou
-                    vivado.pb
-                    __synthesis_is_complete__
+            ├───impl_1/..      
+            └───synth_1/..
+                    
 ```
 ---
